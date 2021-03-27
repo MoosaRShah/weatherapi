@@ -10,58 +10,67 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#652fa3), to(#61308f));
-  background: linear-gradient(#652fa3, #61308f);
-  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9f4cff), to(#43a2da));
+  background: linear-gradient(#9f4cff, #43a2da);
+  color: #999;
 }
 
-.location,
-.temperature {
+.location {
   height: 30vh;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .temperature {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.degree__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
-}
-
-.degree__section span {
-  margin: 10px;
-  font-size: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
 }
 
 .degree__section h2 {
   font-size: 40px;
+}
+
+.card {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 22px 20px 30px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 22px 20px 30px 5px rgba(0, 0, 0, 0.3);
+  padding: 0 40px;
+}
+
+.weather__icon {
+  margin-left: 2rem;
+}
+
+.c {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

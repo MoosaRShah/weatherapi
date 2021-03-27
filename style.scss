@@ -7,34 +7,43 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(101, 47, 163), rgb(97, 48, 143));
-  color: #fff;
+  background: linear-gradient(rgb(159, 76, 255), rgb(67, 162, 218));
+  color: #999;
 }
 
-.location,
-.temperature {
+.location {
   height: 30vh;
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
 }
 
 .temperature {
-  flex-direction: column;
-}
-.degree__section {
   display: flex;
   align-items: center;
-  cursor: pointer;
-  & span {
-    margin: 10px;
-    font-size: 30px;
-  }
+  flex-direction: column;
+  height: 20vh;
+}
+.degree__section {
   & h2 {
     font-size: 40px;
   }
+}
+
+.card {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 22px 20px 30px 5px rgba(0, 0, 0, 0.3);
+  padding: 0 40px;
+}
+.weather__icon {
+  margin-left: 2rem;
+}
+
+.c {
+  margin: 5px;
 }

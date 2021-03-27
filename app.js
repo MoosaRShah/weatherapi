@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(data => {
           //   console.log(data)
           tempDescription.textContent = data.weather[0].description
-          tempDegree.textContent = data.main.temp
+          tempDegree.innerHTML = `${data.main.temp}<span class='c'>C</span>`
           locationName.textContent = data.name
           const { icon } = data.weather[0]
           locationIcon.innerHTML = `<img src="icons/${icon}.png">`
